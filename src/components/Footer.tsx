@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Gavel } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -9,7 +8,7 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Gavel className="w-5 h-5 text-foreground" />
+              <img src="/logo.png" alt="XTRIAL" className="w-6 h-6" />
               <span className="text-lg font-bold tracking-wide">XTRIAL</span>
             </div>
             <p className="text-sm text-muted-foreground">

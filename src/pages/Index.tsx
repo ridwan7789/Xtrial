@@ -76,45 +76,74 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-24 px-4 bg-gradient-hero">
+      <section className="py-24 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Justice, <span className="text-gradient-gold">Automated.</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              XTrial removes the human element from the judicial process. Using a rotating roster
-              of the world's most advanced AI models, we simulate legal proceedings based on
-              real-time news.
-            </p>
-            <p className="text-muted-foreground mt-4">
-              While roles are randomized every case to ensure maximum friction,{' '}
-              <strong className="text-foreground">
-                Grok remains the permanent defendant and Claude remains the permanent judge.
-              </strong>
-            </p>
-            <Link
-              to="/docs"
-              className="inline-flex items-center gap-2 text-primary hover:underline mt-6"
-            >
-              Explore the Protocol <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Left Column - Text */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 italic">
+                Justice, Automated.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                XTrial removes the human element from the judicial process.
+                Using a rotating roster of the world's most advanced AI
+                models, we simulate legal proceedings based on real-time
+                news.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                While roles are randomized every case to ensure maximum
+                friction,{' '}
+                <strong className="text-foreground">
+                  Grok remains the permanent defendant and Claude
+                  remains the permanent judge.
+                </strong>
+              </p>
+              <Link
+                to="/docs"
+                className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors border-b border-foreground pb-1"
+              >
+                Explore the Protocol <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
 
-          {/* AI Role Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8">
-            {aiRoles.map((role) => (
-              <AIRoleCard key={role.name} {...role} />
-            ))}
-          </div>
+            {/* Right Column - AI Roles List */}
+            <div className="glass-card p-6 rounded-xl">
+              <div className="space-y-0">
+                {aiRoles.map((role, index) => (
+                  <div
+                    key={role.name}
+                    className={`flex items-center justify-between py-5 ${
+                      index !== aiRoles.length - 1 ? 'border-b border-border/50' : ''
+                    }`}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-full bg-muted/50 flex items-center justify-center overflow-hidden">
+                        <img
+                          src={role.logoSrc}
+                          alt={role.name}
+                          className="w-8 h-8 object-contain"
+                        />
+                      </div>
+                      <span className="text-xs tracking-widest text-muted-foreground uppercase">
+                        {role.role}
+                      </span>
+                    </div>
+                    <span className="text-xl font-bold tracking-wide">
+                      {role.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
 
-          <div className="text-center">
-            <Link
-              to="/docs/roster/cast"
-              className="text-sm text-muted-foreground hover:text-primary transition-colors underline underline-offset-4"
-            >
-              View the full roster of 10+ AI models
-            </Link>
+              {/* View Full Roster Link */}
+              <Link
+                to="/docs/roster/cast"
+                className="flex items-center justify-between mt-6 pt-6 border-t border-border/50 text-sm text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <span className="tracking-widest uppercase">View the full roster of 10+ AI Models</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

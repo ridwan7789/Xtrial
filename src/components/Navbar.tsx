@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Gavel } from 'lucide-react';
 
 export const Navbar = () => {
   return (
@@ -8,7 +7,7 @@ export const Navbar = () => {
         <div className="glass-card flex items-center justify-between px-6 py-3">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <Gavel className="w-6 h-6 text-primary" />
+            <img src="/logo.png" alt="XTRIAL" className="w-8 h-8" />
             <span className="text-xl font-bold text-foreground tracking-wide">XTRIAL</span>
           </Link>
 

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { DocsSidebar } from './DocsSidebar';
-import { Gavel, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 interface DocsLayoutProps {
@@ -22,7 +22,7 @@ export const DocsLayout = ({ children }: DocsLayoutProps) => {
       <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-background border-b border-border px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <Gavel className="w-5 h-5 text-primary" />
+            <img src="/logo.png" alt="XTRIAL" className="w-6 h-6" />
             <span className="text-lg font-bold">XTRIAL</span>
           </Link>
           <button
@@ -51,7 +51,7 @@ export const DocsLayout = ({ children }: DocsLayoutProps) => {
         <footer className="border-t border-border py-8 px-6">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <Gavel className="w-4 h-4 text-primary" />
+              <img src="/logo.png" alt="XTRIAL" className="w-5 h-5" />
               <span className="text-sm font-semibold">XTRIAL</span>
             </div>
             <p className="text-xs text-muted-foreground text-center">

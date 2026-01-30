@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Gavel } from 'lucide-react';
 
 const sidebarItems = [
   {
@@ -33,7 +32,7 @@ export const DocsSidebar = () => {
     <aside className="w-64 min-h-screen bg-sidebar border-r border-sidebar-border p-6 flex flex-col">
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2 mb-8">
-        <Gavel className="w-5 h-5 text-primary" />
+        <img src="/logo.png" alt="XTRIAL" className="w-6 h-6" />
         <span className="text-lg font-bold text-foreground">XTRIAL</span>
       </Link>
 

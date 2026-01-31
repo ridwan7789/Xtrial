@@ -31,14 +31,12 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://pump.fun/1nc1nerator11111111111111111111111111111111"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/launchpad"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Watch the Stream
-                </a>
+                  XTrial Launchpad
+                </Link>
               </li>
               <li>
                 <a

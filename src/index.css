@@ -106,8 +106,8 @@
 
   /* Hero Video Container */
   .video-container {
-    @apply relative rounded-xl overflow-hidden;
-    box-shadow: 
+    @apply relative rounded-xl overflow-hidden w-full;
+    box-shadow:
       0 0 0 1px hsl(var(--border)),
       var(--shadow-heavy),
       var(--glow-gold);
@@ -115,7 +115,7 @@
 
   /* Contract Address Bar */
   .ca-bar {
-    @apply flex items-center gap-3 px-4 py-3 rounded-full cursor-pointer transition-all duration-300;
+    @apply flex items-center gap-3 px-4 py-3 rounded-full cursor-pointer transition-all duration-300 w-full max-w-md;
     background: hsl(var(--glass-bg));
     border: 1px solid hsl(var(--glass-border));
     backdrop-filter: blur(var(--glass-blur));
@@ -128,7 +128,7 @@
 
   /* CTA Buttons */
   .btn-primary {
-    @apply px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider transition-all duration-300;
+    @apply px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base uppercase tracking-wider transition-all duration-300;
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
   }
@@ -139,7 +139,7 @@
   }
 
   .btn-outline {
-    @apply px-8 py-4 rounded-lg font-semibold text-sm uppercase tracking-wider transition-all duration-300 border;
+    @apply px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base uppercase tracking-wider transition-all duration-300 border;
     background: transparent;
     border-color: hsl(var(--border));
     color: hsl(var(--foreground));
@@ -152,7 +152,7 @@
 
   /* AI Role Cards */
   .role-card {
-    @apply flex flex-col items-center p-6 rounded-xl transition-all duration-300;
+    @apply flex flex-col items-center p-4 sm:p-6 rounded-xl transition-all duration-300;
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
   }
@@ -183,27 +183,27 @@
 
   /* Documentation Styles */
   .doc-content {
-    @apply max-w-3xl mx-auto;
+    @apply max-w-none sm:max-w-3xl mx-auto w-full;
   }
 
   .doc-content h1 {
-    @apply text-4xl font-bold mb-6 text-foreground;
+    @apply text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-foreground;
   }
 
   .doc-content h2 {
-    @apply text-2xl font-semibold mt-12 mb-4 pb-2 border-b border-border;
+    @apply text-xl sm:text-2xl font-semibold mt-10 sm:mt-12 mb-3 sm:mb-4 pb-2 border-b border-border;
   }
 
   .doc-content h3 {
-    @apply text-xl font-semibold mt-8 mb-3;
+    @apply text-lg sm:text-xl font-semibold mt-6 sm:mt-8 mb-2 sm:mb-3;
   }
 
   .doc-content h4 {
-    @apply text-lg font-medium mt-6 mb-2 text-muted-foreground;
+    @apply text-base sm:text-lg font-medium mt-4 sm:mt-6 mb-1.5 sm:mb-2 text-muted-foreground;
   }
 
   .doc-content p {
-    @apply text-muted-foreground leading-relaxed mb-4;
+    @apply text-muted-foreground leading-relaxed mb-3 sm:mb-4;
   }
 
   .doc-content strong {
@@ -211,45 +211,45 @@
   }
 
   .doc-content code {
-    @apply px-1.5 py-0.5 rounded bg-muted text-primary text-sm;
+    @apply px-1.5 py-0.5 rounded bg-muted text-primary text-xs sm:text-sm;
   }
 
   .doc-content pre {
-    @apply p-4 rounded-lg bg-muted overflow-x-auto my-6;
+    @apply p-3 sm:p-4 rounded-lg bg-muted overflow-x-auto my-4 sm:my-6 text-xs sm:text-sm;
   }
 
   .doc-content pre code {
-    @apply bg-transparent p-0 text-sm leading-relaxed;
+    @apply bg-transparent p-0 leading-relaxed;
   }
 
   .doc-callout {
-    @apply p-6 rounded-xl my-8;
+    @apply p-4 sm:p-6 rounded-xl my-6 sm:my-8;
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
   }
 
   .doc-callout-label {
-    @apply text-xs font-semibold uppercase tracking-widest mb-4;
+    @apply text-[10px] sm:text-xs font-semibold uppercase tracking-widest mb-3 sm:mb-4;
     color: hsl(var(--primary));
   }
 
   /* Numbered List for Vision */
   .numbered-list {
-    @apply space-y-6 my-8;
+    @apply space-y-4 sm:space-y-6 my-6 sm:my-8;
   }
 
   .numbered-item {
-    @apply flex gap-4;
+    @apply flex flex-col sm:flex-row gap-3 sm:gap-4;
   }
 
   .numbered-item-number {
-    @apply text-3xl font-bold;
+    @apply text-2xl sm:text-3xl font-bold;
     color: hsl(var(--primary) / 0.3);
   }
 
   /* Chaos Level Cards */
   .chaos-card {
-    @apply p-6 rounded-xl;
+    @apply p-4 sm:p-6 rounded-xl;
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
   }
@@ -268,16 +268,15 @@
 
   /* Roster Card */
   .roster-card {
-    @apply flex gap-4 p-4 rounded-xl;
+    @apply flex flex-col sm:flex-row gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl;
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
   }
 
   .roster-card img {
-    @apply w-16 h-16 rounded-lg object-cover;
+    @apply w-12 h-12 sm:w-16 sm:h-16 rounded-lg object-cover;
   }
 }
-
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;

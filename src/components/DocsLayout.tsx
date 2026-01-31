@@ -21,31 +21,31 @@ export const DocsLayout = ({ children }: DocsLayoutProps) => {
         </div>
 
         {/* Mobile Header */}
-        <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-background border-b border-border px-4 py-3">
+        <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-background border-b border-border px-4 py-2.5"> {/* Reduced padding on mobile */}
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2">
               <img src="/logo.png" alt="XTRIAL" className="w-6 h-6" />
-              <span className="text-lg font-bold">XTRIAL</span>
+              <span className="text-base sm:text-lg font-bold">XTRIAL</span> {/* Smaller text on mobile */}
             </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 text-foreground"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />} {/* Smaller icons on mobile */}
             </button>
           </div>
         </div>
 
         {/* Mobile Sidebar Overlay */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-sm pt-16">
+          <div className="md:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-sm pt-14"> {/* Adjusted top padding */}
             <DocsSidebar />
           </div>
         )}
 
         {/* Main Content */}
-        <main className="flex-1 min-h-screen pt-16 md:pt-0">
-          <div className="max-w-4xl mx-auto px-6 py-12 md:py-16">
+        <main className="flex-1 min-h-screen pt-14 md:pt-0"> {/* Adjusted top padding for mobile header */}
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16"> {/* Reduced padding on mobile */}
             {children}
           </div>
         </main>

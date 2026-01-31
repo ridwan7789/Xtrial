@@ -51,10 +51,7 @@ export const LaunchpadPreview = () => {
           </Link>
         </div>
 
-        {/* Decorative elements */}
-        <div className="absolute top-4 left-4">
-          <img src="/logo.png" alt="XTRIAL" className="w-10 h-10 opacity-50" />
-        </div>
+        {/* Decorative elements - Logo removed as requested */}
 
         {/* Glow effect */}
         <div className="absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-white/10" />

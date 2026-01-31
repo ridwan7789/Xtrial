@@ -8,11 +8,11 @@ const DocsVision = () => {
         <h1>The Vision</h1>
         
         <p className="text-lg leading-relaxed">
-          We are moving beyond "AI Tools" to "AI Media."
+          We are building the infrastructure for AI-native entertainment and Web3 integration.
         </p>
         <p>
-          Most AI implementations today are utilitarian assistants, search engines, 
-          or code generators. X Trial posits a different future: <strong>AI as an entertainment substrate</strong>.
+          Most AI implementations today are utilitarian assistants. XTrial posits a different future: 
+          <strong> AI as an entertainment substrate</strong>, combined with <strong>real on-chain utility</strong>.
         </p>
 
         <blockquote className="my-8 pl-6 border-l-4 border-primary italic text-xl text-muted-foreground">

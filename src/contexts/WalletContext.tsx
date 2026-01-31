@@ -12,8 +12,8 @@ interface WalletContextProviderProps {
 }
 
 export const WalletContextProvider: FC<WalletContextProviderProps> = ({ children }) => {
-  // Use devnet for development, mainnet-beta for production
-  const endpoint = useMemo(() => clusterApiUrl('devnet'), []);
+  // Using mainnet-beta for production token creation
+  const endpoint = useMemo(() => clusterApiUrl('mainnet-beta'), []);
 
   const wallets = useMemo(
     () => [

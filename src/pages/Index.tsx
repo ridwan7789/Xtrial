@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
-import { VideoEmbed } from '../components/VideoEmbed';
+import { LaunchpadPreview } from '../components/LaunchpadPreview';
 import { ContractAddressBar } from '../components/ContractAddressBar';
-import { AIRoleCard } from '../components/AIRoleCard';
 
 const aiRoles = [
   {
@@ -52,8 +51,8 @@ const Index = () => {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center gap-10">
-          {/* Video Embed */}
-          <VideoEmbed />
+          {/* Launchpad Preview */}
+          <LaunchpadPreview />
 
           {/* Contract Address Bar */}
           <ContractAddressBar />

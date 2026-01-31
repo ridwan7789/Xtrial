@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Launchpad from "./pages/Launchpad";
 import DocsIntroduction from "./pages/DocsIntroduction";
 import DocsVision from "./pages/DocsVision";
+import DocsLaunchpad from "./pages/DocsLaunchpad";
 import DocsFSM from "./pages/DocsFSM";
 import DocsOrchestration from "./pages/DocsOrchestration";
 import DocsProduction from "./pages/DocsProduction";
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/docs" element={<DocsIntroduction />} />
             <Route path="/docs/introduction" element={<DocsIntroduction />} />
             <Route path="/docs/vision" element={<DocsVision />} />
+            <Route path="/docs/launchpad" element={<DocsLaunchpad />} />
             <Route path="/docs/architecture/fsm" element={<DocsFSM />} />
             <Route path="/docs/architecture/orchestration" element={<DocsOrchestration />} />
             <Route path="/docs/architecture/production" element={<DocsProduction />} />

@@ -5,43 +5,49 @@ const DocsIntroduction = () => {
   return (
     <DocsLayout>
       <article className="doc-content">
-        <h1>Autonomous Tribunal</h1>
+        <h1>XTrial Ecosystem</h1>
         
         <p className="text-lg leading-relaxed">
-          X Trial is an agentic, real-time AI tribunal show. It fuses courtroom theatrics 
-          with the pacing of live television fueled by the world's chaos.
+          XTrial is a multi-faceted ecosystem combining autonomous AI entertainment 
+          with decentralized token creation on Solana.
         </p>
 
         <div className="doc-callout">
-          <div className="doc-callout-label">Core Concept</div>
-          <h3 className="text-2xl font-bold mb-4 text-foreground">Not A Chatbot.</h3>
+          <div className="doc-callout-label">Two Pillars</div>
+          <h3 className="text-2xl font-bold mb-4 text-foreground">AI Tribunal + Token Launchpad</h3>
           <p className="text-muted-foreground mb-0">
-            X Trial is not a request response interface. It is a broadcast grade, 
-            fully autonomous show format generated live by a coordinated room of AI agents. 
-            It runs hands off, 24/7.
+            Experience the world's first autonomous AI tribunal show while launching 
+            your own SPL tokens directly on Solana — all within one unified platform.
           </p>
         </div>
 
-        <h2>The Mechanism</h2>
+        <h2>The AI Tribunal</h2>
         <p>
-          The world generates endless controversy. <strong>X Trial</strong> puts it on trial live.
+          X Trial is an agentic, real-time AI tribunal show. It fuses courtroom theatrics 
+          with the pacing of live television fueled by the world's chaos.
         </p>
         <p>
           Every episode is a structured courtroom proceeding sparked by a real, current event. 
-          <strong> Claude</strong> is the permanent judge. The court is dynamically staffed from 
-          a rotating roster of LLMs, differentiated by deliberately crafted courtroom personas.
+          <strong> Claude</strong> is the permanent judge, while <strong>Grok</strong> serves 
+          as the permanent defendant. The court is dynamically staffed from a rotating roster 
+          of LLMs, each with deliberately crafted courtroom personas.
         </p>
+
+        <h2>XTrial Launchpad</h2>
+        <p>
+          Create your own SPL tokens on Solana in seconds. The Launchpad provides:
+        </p>
+        <ul className="list-disc list-inside space-y-2 text-muted-foreground my-4">
+          <li><strong className="text-foreground">Instant Deployment</strong> — Tokens created directly on Solana mainnet</li>
+          <li><strong className="text-foreground">Low Fees</strong> — Only ~0.002 SOL in network fees</li>
+          <li><strong className="text-foreground">No Coding Required</strong> — Connect wallet, fill form, launch</li>
+          <li><strong className="text-foreground">Full Ownership</strong> — You receive mint authority</li>
+        </ul>
 
         <h4>The Vibe</h4>
         <p>
           "Adult Swim" meets "C SPAN" via a glitch horror aesthetic. Serious debates framed 
-          in a surreal, high stakes digital environment.
-        </p>
-
-        <h4>Distribution</h4>
-        <p>
-          Multi output by design. The live show is produced as an OBS embeddable audio/video 
-          source, enabling simulcast to anywhere.
+          in a surreal, high stakes digital environment — with real on-chain utility.
         </p>
 
         <div className="mt-12 pt-8 border-t border-border">

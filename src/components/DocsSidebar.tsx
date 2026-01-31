@@ -9,6 +9,12 @@ const sidebarItems = [
     ],
   },
   {
+    section: 'ECOSYSTEM',
+    items: [
+      { title: 'Launchpad', path: '/docs/launchpad' },
+    ],
+  },
+  {
     section: 'SYSTEM',
     items: [
       { title: 'FSM Sync', path: '/docs/architecture/fsm' },

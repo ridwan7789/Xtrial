@@ -356,7 +356,7 @@ export const CreateTokenForm = () => {
         </div>
 
         <p className="text-xs text-muted-foreground text-center">
-          Creating a token requires a small amount of SOL for transaction fees (~0.002 SOL on devnet)
+          Creating a token requires a small amount of SOL for transaction fees (~0.002 SOL)
         </p>
       </form>
     </div>

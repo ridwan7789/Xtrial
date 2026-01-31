@@ -125,7 +125,7 @@ export const TokenList = () => {
                   </span>
                   {token.mint_address && (
                     <a
-                      href={`https://explorer.solana.com/address/${token.mint_address}?cluster=devnet`}
+                      href={`https://explorer.solana.com/address/${token.mint_address}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 hover:text-primary transition-colors"

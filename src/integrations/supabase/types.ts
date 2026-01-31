@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      tokens: {
+        Row: {
+          created_at: string
+          creator_wallet: string
+          decimals: number
+          description: string | null
+          id: string
+          image_url: string | null
+          initial_supply: number
+          mint_address: string | null
+          name: string
+          symbol: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          creator_wallet: string
+          decimals?: number
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          initial_supply?: number
+          mint_address?: string | null
+          name: string
+          symbol: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          creator_wallet?: string
+          decimals?: number
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          initial_supply?: number
+          mint_address?: string | null
+          name?: string
+          symbol?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

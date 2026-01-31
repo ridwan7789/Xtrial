@@ -60,14 +60,12 @@ const Index = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-xl">
-            <a
-              href="https://pump.fun/1nc1nerator11111111111111111111111111111111"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/launchpad"
               className="btn-primary flex-1 text-center"
             >
-              VIEW ON PUMP.FUN
-            </a>
+              XTRIAL LAUNCHPAD
+            </Link>
             <Link to="/docs" className="btn-outline flex-1 text-center">
               READ DOCUMENTATION
             </Link>

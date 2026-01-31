@@ -42,7 +42,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://x.com/xtrial"
+                  href="https://x.com/xtrial_app?s=21"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors block py-1" // Added padding for touch targets

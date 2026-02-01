@@ -50,6 +50,16 @@ export const Footer = () => {
                   X / Twitter
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://kick.com/xtrial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors block py-1" // Added padding for touch targets
+                >
+                  Kick Stream
+                </a>
+              </li>
             </ul>
           </div>
 

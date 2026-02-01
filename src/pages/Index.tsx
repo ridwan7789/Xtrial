@@ -41,7 +41,7 @@ const Index = () => {
       <section
         className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-32 pb-16" // Increased pt from 24 to 32 for better mobile spacing
         style={{
-          backgroundImage: `url('/courtroom-bg.jpg')`,
+          backgroundImage: `url('/back.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

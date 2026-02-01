@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 
-const CONTRACT_ADDRESS = 'COMING SOON ON SURGE';
+const CONTRACT_ADDRESS = 'COMING SOON';
 
 export const ContractAddressBar = () => {
   const [copied, setCopied] = useState(false);

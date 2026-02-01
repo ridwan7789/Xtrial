@@ -11,20 +11,20 @@ const Launchpad = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 py-3 sm:py-4"> {/* Reduced padding on mobile */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3 sm:gap-4"> {/* Smaller gap on mobile */}
+          <div className="flex items-center">
+            <div className="flex items-center gap-3 sm:gap-4 min-w-0 flex-1"> {/* Smaller gap on mobile, prevent shrinking, allow text truncation */}
               <Link
                 to="/"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors flex-shrink-0"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span className="hidden sm:inline">Back</span>
               </Link>
 
-              <div className="flex items-center gap-2 sm:gap-3"> {/* Smaller gap on mobile */}
+              <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1"> {/* Smaller gap on mobile, prevent shrinking, allow text truncation */}
                 <img src="/logo.png" alt="XTRIAL" className="w-6 h-6 sm:w-8 sm:h-8" /> {/* Smaller logo on mobile */}
-                <div>
-                  <h1 className="text-lg sm:text-xl font-bold tracking-wide flex items-center gap-1 sm:gap-2"> {/* Smaller text on mobile */}
+                <div className="min-w-0"> {/* Allow truncation of text if needed */}
+                  <h1 className="text-lg sm:text-xl font-bold tracking-wide truncate"> {/* Truncate text on mobile if needed */}
                     XTRIAL <span className="text-primary">LAUNCHPAD</span>
                   </h1>
                   <p className="text-[10px] sm:text-xs text-muted-foreground hidden sm:block">
@@ -34,7 +34,9 @@ const Launchpad = () => {
               </div>
             </div>
 
-            <WalletButton />
+            <div className="ml-2 flex-shrink-0"> {/* Prevent button from shrinking and add small margin */}
+              <WalletButton />
+            </div>
           </div>
         </div>
       </header>
